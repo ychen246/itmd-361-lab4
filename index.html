@@ -2,9 +2,42 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Lab 4</title>
+        <title>Volunteer Form</title>
     </head>
     <body>
-        
+        <h1>Volunteer Form</h1>
+        <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
+        <strong>My info</strong><br>
+        <br>
+        First Name: <input type="text" name="first_name_field"><br>
+        Last Name: <input type="text" name="last_name_field"><br>
+        Phone Number: <input type="text" name="phone_field"><br>
+        Email Address: <input type="text" name="email_field"><br>
+        Gender: <input type="radio" name="gender field" value="male"> Male <input type="radio" name="gender field" value="female"> Female<br>
+        Age: <select name="age_field">
+            <option value="Under 18">Under 18</option>
+            <option value="18-24">18 - 24</option>
+            <option value="25-34">25 - 34</option>
+            <option value="35-44">35 - 44</option>
+            <option value="45-54">45 - 54</option>
+            <option value="55-64">55 - 64</option> 
+            <option value="65 or Older">65 or Older</option>
+        </select><br>
+        <br>
+        <strong>My Availability</strong><br>
+        Days Available:<br>
+        <input type="checkbox" name="available_field[]" value="Sunday">Sunday<br>
+        <input type="checkbox" name="available_field[]" value="Monday">Monday<br>
+        <input type="checkbox" name="available_field[]" value="Tuesday">Tuesday<br>
+        <input type="checkbox" name="available_field[]" value="Wednesday">Wednesday<br>
+        <input type="checkbox" name="available_field[]" value="Thursday">Thursday<br>
+        <input type="checkbox" name="available_field[]" value="Friday">Friday<br>
+        <input type="checkbox" name="available_field[]" value="Saturday">Saturday<br>
+        <br>
+        Comments?<br>
+        <textarea cols="50" rows="25" name="comments_field"></textarea><br>
+        <br>
+        <input type="submit">
+        </form>
     </body>
 </html>
