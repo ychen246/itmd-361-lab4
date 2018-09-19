@@ -7,14 +7,14 @@
     <body>
         <h1>Volunteer Form</h1>
         <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
-        <strong>My info</strong><br>
+        <legend>My info</legend><br>
         <br>
-        First Name: <input type="text" name="first_name_field"><br>
-        Last Name: <input type="text" name="last_name_field"><br>
-        Phone Number: <input type="text" name="phone_field"><br>
-        Email Address: <input type="text" name="email_field"><br>
-        Gender: <input type="radio" name="gender field" value="male"> Male <input type="radio" name="gender field" value="female"> Female<br>
-        Age: <select name="age_field">
+        <label>First Name: </label><input type="text" name="first_name_field"><br>
+        <label>Last Name: </label><input type="text" name="last_name_field"><br>
+        <label>Phone Number: </label><input type="text" name="phone_field"><br>
+        <label>Email Address: </label><input type="text" name="email_field"><br>
+        <label>Gender: </label><input type="radio" name="gender field" value="male"> Male <input type="radio" name="gender field" value="female"> Female<br>
+        <label>Age: </label><select name="age_field">
             <option value="Under 18">Under 18</option>
             <option value="18-24">18 - 24</option>
             <option value="25-34">25 - 34</option>
@@ -24,8 +24,8 @@
             <option value="65 or Older">65 or Older</option>
         </select><br>
         <br>
-        <strong>My Availability</strong><br>
-        Days Available:<br>
+        <legend>My Availability</legend><br>
+        <label>Days Available:</label>
         <input type="checkbox" name="available_field[]" value="Sunday">Sunday<br>
         <input type="checkbox" name="available_field[]" value="Monday">Monday<br>
         <input type="checkbox" name="available_field[]" value="Tuesday">Tuesday<br>
@@ -34,7 +34,7 @@
         <input type="checkbox" name="available_field[]" value="Friday">Friday<br>
         <input type="checkbox" name="available_field[]" value="Saturday">Saturday<br>
         <br>
-        Comments?<br>
+        <label>Comments?</label>
         <textarea cols="50" rows="25" name="comments_field"></textarea><br>
         <input type="hidden" name="hidden_field" value="ychen246">
         <br>
